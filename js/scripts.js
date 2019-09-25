@@ -97,7 +97,7 @@
 
 
 
-//PIG LATIN..... 
+//**********PIG LATIN.....********** 
 
 var str= prompt("give me a sentence:");
 
@@ -117,15 +117,17 @@ var str= prompt("give me a sentence:");
 
 
 
-// *****NEW BUT SAME TO PIG LATIN.... This one works better*******
+// *****NEW BUT SAME FOR PIG LATIN.... This one works better*******
 var VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
 
 function translate(str) {
   return str.split(' ').map(translateWord).join(' ');
 }
-
+// this equets **word** to data given to translateWord array
 function translateWord(word) {
+    console.log(word);
+
   for(var i = 0; i < word.length; i++) {
     if(VOWELS.indexOf(word[i]) !== -1) break;
     if(word.slice(i, i+2) === 'qu') i += 1;
@@ -135,3 +137,27 @@ function translateWord(word) {
 
 var results = translate(str);
 alert(results);
+
+
+// I AM NOT SURE IF THIS MEETS OUR GOALS******
+// function pigIt(str){
+//   let newArr = [];
+//   let arr = str.split(" ");
+//   for (let i=0; i<arr.length; i++) {
+//     if (arr[i]!='?' && arr[i]!='!') {
+//       let word = arr[i];
+//       let letter = word.charAt(0);
+//       let newWord = word.slice(1) + letter + "ay";
+//       newArr.push(newWord);
+//     } else {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   return newArr.join(" ");
+// }
+
+// var results = pigIt(str);
+// alert(results);
+
+
+// *********END OF PIG LATIN**********
