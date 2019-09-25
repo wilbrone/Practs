@@ -117,7 +117,7 @@ var str= prompt("give me a sentence:");
 
 
 
-// *****NEW BUT SAME TO PIG LATIN*******
+// *****NEW BUT SAME TO PIG LATIN.... This one works better*******
 var VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
 
