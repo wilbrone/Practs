@@ -70,9 +70,6 @@
 
 
 
-
-
-
 // FOR APPENDING AND PREPENDING ITEMS.
 // $("button#hello").click(function() {
 //   $("h2").prepend("Hello!");
@@ -85,3 +82,52 @@
 // $("button#stop").click(function() {
 //   $("ul").prepend("<li>Stop copying me!</li>");
 // });
+
+
+// CREATING AN ARRAY
+// var inputT =prompt("write something (Seperate with commas) ");
+// var arry = inputT.split(",");
+// var entre = [];
+ 
+// arry.map(function(enta){
+//     entre.push(enta);
+// });
+ 
+// alert(entre);
+
+
+
+//PIG LATIN..... 
+
+var str= prompt("give me a sentence:");
+
+// function pigIt(str){
+//   var normalArr = str.split(" "); 
+//   var pigArr = []; 
+//   newWord = ""; 
+//   for (var word in normalArr){
+//       newWord = normalArr[word].substring(2) + normalArr[word].substring(0, 2) + "ay"; 
+//       pigArr.push(newWord); 
+//   }
+//  return pigArr.join(seperator = " "); 
+// }
+
+// var results = pigIt(str);
+// alert(results);
+
+
+
+// *****NEW BUT SAME TO PIG LATIN*******
+// const VOWELS = ['a', 'e', 'i', 'o', 'u'];
+
+// function translate(message) {
+//   return message.split(' ').map(translateWord).join(' ');
+// }
+
+// function translateWord(word) {
+//   for(var i = 0; i < word.length; i++) {
+//     if(VOWELS.indexOf(word[i]) !== -1) break;
+//     if(word.slice(i, i+2) === 'qu') i += 1;
+//   };
+//   return word.slice(i) + word.slice(0, i) + 'ay';
+// }
