@@ -118,16 +118,20 @@ var str= prompt("give me a sentence:");
 
 
 // *****NEW BUT SAME TO PIG LATIN*******
-// const VOWELS = ['a', 'e', 'i', 'o', 'u'];
+var VOWELS = ['a', 'e', 'i', 'o', 'u'];
 
-// function translate(message) {
-//   return message.split(' ').map(translateWord).join(' ');
-// }
 
-// function translateWord(word) {
-//   for(var i = 0; i < word.length; i++) {
-//     if(VOWELS.indexOf(word[i]) !== -1) break;
-//     if(word.slice(i, i+2) === 'qu') i += 1;
-//   };
-//   return word.slice(i) + word.slice(0, i) + 'ay';
-// }
+function translate(str) {
+  return str.split(' ').map(translateWord).join(' ');
+}
+
+function translateWord(word) {
+  for(var i = 0; i < word.length; i++) {
+    if(VOWELS.indexOf(word[i]) !== -1) break;
+    if(word.slice(i, i+2) === 'qu') i += 1;
+  };
+  return word.slice(i) + word.slice(0, i) + 'ay';
+}
+
+var results = translate(str);
+alert(results);
